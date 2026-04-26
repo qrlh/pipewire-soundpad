@@ -107,3 +107,6 @@ assets = [
         "644",
     ],
 ]
+
+[patch.crates-io]
+symphonia-adapter-libopus = { path = "patches/symphonia-adapter-libopus" }

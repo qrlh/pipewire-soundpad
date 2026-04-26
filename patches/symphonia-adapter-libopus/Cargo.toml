@@ -1,0 +1,17 @@
+[package]
+name = "symphonia-adapter-libopus"
+version = "0.2.7"
+edition = "2024"
+
+[features]
+bundled = ["opusic-sys/bundled"]
+default = ["bundled"]
+
+[lib]
+name = "symphonia_adapter_libopus"
+path = "src/lib.rs"
+
+[dependencies]
+log = "0.4"
+opusic-sys = { version = "0.6", default-features = false }
+symphonia-core = "0.5"
